@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <form action="{% url 'print:home' %}" method="POST">
+        {% csrf_token %}
+        <input type="text" name="name"><br>
+        <input type="radio" name="type" value="movie">Movie<br>
+        <input type="radio" name="type" value="book">Book<br>
+        <input type="radio" name="type" value="game">Game<br>
+        <input type="radio" name="type" value="song">Song<br>
+        <input type="radio" name="type" value="tv_series">TV Series
+        <button type="submit" value="show">Show</button>
+    </form>
+
+</body>
+</html>

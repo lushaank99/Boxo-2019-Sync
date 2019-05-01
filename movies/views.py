@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .models import Movie_list
 import requests
 
+
 #69dfb02d97db8238985dd9d57f656946
 
 def home(request):

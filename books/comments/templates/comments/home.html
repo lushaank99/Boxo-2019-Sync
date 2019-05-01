@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <form action="{% url 'comments:search' %}" method="get">
+        <input type="text" name="name" placeholder="Enter the name" size="55">
+        <input type="text" name="type" placeholder="Enter it's type" size="55">
+        <button type="submit" value="search">Search</button>
+    </form>
+</body>
+</html>
